@@ -25,13 +25,14 @@
             <span class="icon-bar"></span>
           </button>
           <a href="/" class="navbar-left"><img src="logo_small.jpg"></a>
-          <a class='navbar-brand' href='index.html' style="margin-left:10px" >Emergenza Casa</a>
+          <a class='navbar-brand logo-text' href='index.html' style="margin-left:10px" >Emergenza Casa</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class='active'><a href="index.html">Mappa</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
+            <li class='active'><a href="index.html">Cerca</a></li>
+            <li><a href="aggiungi.html">Aggiungi</a></li>
+            <li><a href="faq.html">Faq</a></li>          
+            </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -39,9 +40,9 @@
     <div class='container'>
       <div class="row">
           <div class="callout-block text-center fade-in-b">
-            <h1>Emergenza Casa - <b> una casa</b> a chi non ce l'ha più - <a href="#" class="btn btn-success">Aggiungi una casa</a></h1>
-             <p>Su emergenza-casa.it trovi <strong>alloghi gratuiti</strong> (case, stanze, posti letto) messi a disposizione per le persone che hanno perso la casa a causa di un <strong>terremoto</strong>.</p>
-             <p><i>E' possibile ricercare le case disponibili ed aggiungerne di nuove.</i></p>
+            <h1>Emergenza Casa - <b> una casa</b> a chi non ce l'ha più - <a href="/aggiungi.html" class="btn btn-success">Aggiungi una casa</a></h1>
+             <h4><strong>Alloghi gratuiti</strong> (case, stanze, posti letto) per chi ha perso la casa a causa di un <strong>terremoto</strong>.</h4>
+            
           </div>
         </div>
     </div>
@@ -50,7 +51,7 @@
         <div class='col-md-4'>
           <div class='well'>
             <h4>
-              Cerca località <small>(<a id='find_me' href='#'>trovami</a>)</small>
+              Cerca casa <small>(<a id='find_me' href='#'>trovami</a>)</small>
             </h4>
             <p>
               <input class='form-control' id='search_address' placeholder='inserisci una città o un indirizzo' type='text' />
@@ -66,26 +67,6 @@
               </label>
             </p>
 
-            <br />
-            <h4>Custom filters and views</h4>
-            <p>Take a look at the <a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples'>wiki</a> to see how to add your own custom filters and views like:</p>
-            <div class='row'>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-checkboxes'>Checkboxes</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-radiobuttons'>Radio buttons</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-drop-down-lists'>Drop down lists</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-textsearches'>Text searches</a></li>
-                </ul>
-              </div>
-              <div class='col-md-6'>
-                <ul>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-sliders'>Sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/Filter-examples#wiki-date-sliders'>Date sliders</a></li>
-                  <li><a href='https://github.com/derekeder/FusionTable-Map-Template/wiki/List-search-results'>Results lists</a></li>
-                </ul>
-              </div>
-            </div>
             <br />
             <a class='btn btn-primary' id='search' href='#'>
               <i class='glyphicon glyphicon-search'></i>
