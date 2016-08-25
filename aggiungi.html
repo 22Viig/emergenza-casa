@@ -66,7 +66,7 @@
                </div>
 
                <div class="form-group">
-                 <input class="form-control" id="id_tel" maxlength="10" name="telefono" placeholder="Numero di telefono (non obbligatorio)" type="text" />
+                 <input class="form-control" id="id_tel" maxlength="10" name="telefono" placeholder="Numero di telefono (non obbligatorio)" type="number" />
 
                </div>
 
@@ -74,11 +74,12 @@
                <div class="form-group">
                <select required class="form-control" name="tipo_alloggio" id="id_tipo">
                <option value="" disabled selected>* Seleziona una tipo di alloggio</option>
-                  <option value="volvo">Casa condivisa con altre persone</option>
-                  <option value="saab">Casa Non condivisa con altre persone</option>
-                  <option value="opel">Stanza Condivisa</option>
-                  <option value="audi">Posto Letto</option>
-                  <option value="audi">Altro</option>
+                  <option value="casa_condivisa">Casa condivisa con altre persone</option>
+                  <option value="casa_non_condivisa">Casa Non condivisa con altre persone</option>
+                  <option value="stanza_condivisa">Stanza Condivisa</option>
+                  <option value="stanza_non_condivisa">Stanza Non Condivisa</option>
+                  <option value="posto_letto">Posto Letto</option>
+                  <option value="altro">Altro</option>
                 </select>
               </div>
 
