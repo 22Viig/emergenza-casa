@@ -2,6 +2,10 @@
     background: #fff url(../images/bg.png);
   }
 
+.bg-gray{
+  background-color: #F5F3F4;
+}
+
 a { color: #4B58A6; }
 a:hover { color: #4B58A6; }
 
