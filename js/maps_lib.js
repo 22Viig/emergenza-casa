@@ -294,7 +294,7 @@
             name = self.recordName;
         }
         $("#result_box").fadeOut(function () {
-            $("#result_count").html(self.addCommas(numRows) + " " + name + " found");
+            $("#result_count").html(self.addCommas(numRows) + " " + name + " trovati");
         });
         $("#result_box").fadeIn();
     };
