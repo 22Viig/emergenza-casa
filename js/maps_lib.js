@@ -4,8 +4,8 @@
 
         options = options || {};
 
-        this.recordName = options.recordName || "risultati"; //for showing a count of results
-        this.recordNamePlural = options.recordNamePlural || "risultati";
+        this.recordName = options.recordName || "result"; //for showing a count of results
+        this.recordNamePlural = options.recordNamePlural || "results";
         this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2 mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
@@ -24,7 +24,7 @@
         this.locationScope = options.locationScope || "";
 
         // zoom level when map is loaded (bigger is more zoomed in)
-        this.defaultZoom = options.defaultZoom || 6; 
+        this.defaultZoom = options.defaultZoom || 11; 
 
         // center that your map defaults to
         this.map_centroid = new google.maps.LatLng(options.map_center[0], options.map_center[1]);
@@ -39,8 +39,8 @@
         else
             this.addrMarkerImage = "images/blue-pushpin.png"
 
-    	this.currentPinpoint = null;
-    	$("#result_count").html("");
+        this.currentPinpoint = null;
+        $("#result_count").html("");
         
         this.myOptions = {
             zoom: this.defaultZoom,
@@ -294,7 +294,7 @@
             name = self.recordName;
         }
         $("#result_box").fadeOut(function () {
-            $("#result_count").html(self.addCommas(numRows) + " " + name + " trovati");
+            $("#result_count").html(self.addCommas(numRows) + " " + name + " found");
         });
         $("#result_box").fadeIn();
     };
