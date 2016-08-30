@@ -4,8 +4,8 @@
 
         options = options || {};
 
-        this.recordName = options.recordName || "result"; //for showing a count of results
-        this.recordNamePlural = options.recordNamePlural || "results";
+        this.recordName = options.recordName || "risultati"; //for showing a count of results
+        this.recordNamePlural = options.recordNamePlural || "risultati";
         this.searchRadius = options.searchRadius || 805; //in meters ~ 1/2 mile
 
         // the encrypted Table ID of your Fusion Table (found under File => About)
@@ -39,8 +39,8 @@
         else
             this.addrMarkerImage = "images/blue-pushpin.png"
 
-        this.currentPinpoint = null;
-        $("#result_count").html("");
+    	this.currentPinpoint = null;
+    	$("#result_count").html("");
         
         this.myOptions = {
             zoom: this.defaultZoom,
@@ -294,7 +294,7 @@
             name = self.recordName;
         }
         $("#result_box").fadeOut(function () {
-            $("#result_count").html(self.addCommas(numRows) + " " + name + " found");
+            $("#result_count").html(self.addCommas(numRows) + " " + name + " trovati");
         });
         $("#result_box").fadeIn();
     };
